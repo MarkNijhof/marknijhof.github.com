@@ -1,79 +1,108 @@
-<!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Marknijhof.github.com : " />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Cre8ive Thought</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	    <meta name="language" content="en"/>
+	    <meta name="robots" content="index,follow"/>
+	    <meta name="description" content="I am an experienced Microsoft .Net C# developer with good knowledge about Object Oriented (OO) design. I put great effort in my code to ensure that it is always clean and readable. I am creative and am always thinking of innovative solutions. I consider myself a Software Craftsman and am a strong believer of continuous improvement and teaching."/>
+	    <meta name="keywords" content="Cre8iveThought, Cre8ive Thought, Software Craftsmanship, Microsoft .Net, C#, Object Oriented"/>
+		<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/style-cards.css"/>
+		<link rel="icon" type="image/png" href="http://cre8ivethought.s3.amazonaws.com/images/favicon.png" />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<!--[if lt IE 7]>
+      <script type="text/javascript" src="/javascripts/lib/unitpngfix.js"></script>
+		<![endif]-->		
+    <script type="text/javascript" src="/javascripts/lib/jquery.query-2.1.7.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/microTemplate.js"></script>
+    <script type="text/javascript" src="/javascripts/lib/sammy-0.5.4.min.js"></script>
+    
+    <script type="text/javascript" src="/javascripts/animations.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Marknijhof.github.com</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/MarkNijhof">View on GitHub</a>
-
-          <h1 id="project_title">Marknijhof.github.com</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-116586-8");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    	  var cards = $('#cards');
+    	  var frame = $('#frame');
+    		var animator = new Animator(cards, frame);
 
 
-  </body>
+				cards.click(function(){
+				  location.href = '#/MarkNijhof';
+				});
+				
+				var app = $.sammy(function() {
+
+  				this.get('#/Home', function() { 
+  				  animator.bringInBigCards();
+          });
+
+  				this.get('#/MarkNijhof', function() { 
+  				  animator.loadContent(function(){ return loadText("#about_template"); } );
+          });
+
+  				this.get('#/Contact', function() { 
+  				  animator.loadContent(function(){ return loadText("#contact_template"); } );
+          });
+
+  				this.get('#/Blog', function() { 
+  				  animator.gotoBlog();
+          });
+				
+        });
+        
+			  $(function() {
+          app.run('#/Home');
+        });
+								
+				function loadText(template) {
+					return parseTemplate($(template).html(), {});
+				}
+			});
+	 	</script>
+		<script type="text/html" id="contact_template"> 
+		<div class="textBlock">
+			<h1>Contact</h1>
+			<p>If you have any questions or want to contact me about potential consulting or coaching work, then please don&#39;t hesitate use any one of the options listed below.</p> 
+			<h2>Mark Nijhof</h2>
+			<ul>
+				<li>Phone: 0049 151 11 34 21 81</li>
+				<li>Skype: marknijhof or Mark@Nijhof.com</li>
+				<li>E-mail: <a href="mailto:Mark.Nijhof@Cre8iveThought.com">Mark.Nijhof@Cre8iveThought.com</a></li>
+				<li>Twitter: <a href="http://twitter.com/MarkNijhof">@MarkNijhof</a></li>
+			</ul>
+		</div>
+		</script>
+		<script type="text/html" id="about_template"> 
+		<div class="textBlock">
+			<h1>Mark Nijhof</h1>
+      <p>Mark is a Software Developer experienced in the Microsoft .Net framework, he has developed / implemented a diverse range of Object-Oriented software solutions. Mark has been working closely with customers to achieve high quality solutions. Mark is always learning new technologies en theories to improve his programming skills; he is especially interested in all the different Object-Oriented design principles, and in languages like Ruby and Node.js.</p>
+      <h2>Specialties:</h2>
+      <p>Creative thinker, Team player, C#, .Net, Ruby, Agile Software Development, TDD, DDD, Continuous Integration, Web Services, Web Applications</p>
+		</div>
+		</script>
+	</head>
+	<body>
+`		<div id="cards"></div>
+		<div id="frame"></div>
+		
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/frame-back.png" alt="" style="display: none">
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" style="display: none">
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/card-back.png" alt="" style="display: none">
+		<img src="http://cre8ivethought.s3.amazonaws.com/images/card-front.png" alt="" style="display: none">
+		
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-116586-8");
+		pageTracker._setDomainName(".cre8ivethought.com");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+	</body>
 </html>
