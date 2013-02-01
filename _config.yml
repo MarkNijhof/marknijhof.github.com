@@ -1,5 +1,5 @@
 safe: true
-source: https://github.com/MarkNijhof/marknijhof.github.com.git
-destination: /blog
+source: ./_posts
+destination: ./blog
 lsi: false
 pygments: true

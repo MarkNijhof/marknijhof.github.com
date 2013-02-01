@@ -1,12 +1,12 @@
+---
+layout: post
 title: Pair Programming Session
-author: Mark Nijhof
-published: true
 words: 347
 characters: 1,928
 readingTime: '00:01:44'
-keywords: agile,coaching,pair programming
+tags: [agile, coaching, pair programming]
 add_trailing_slash_for_disqus: true
-
+---
 Today I had a really enjoyable pair programming session with my college [Øyvind](http://twitter.com/oyvindfanebust). It was quite some time ago since our last session, which was when we were both working at a customer together.
 
 We were there for a few months and during this time we experimented with different ways of pair programming. It was also the first time we where pairing together, and all do it went very well, and we both learned a lot from (and about) each others, by the different ways of working and thinking, it felt unnatural to me. Or perhaps I should say, not completely right.

@@ -1,11 +1,11 @@
+---
+layout: post
 title: Just explain it to me
-author: Mark Nijhof
-published: true
 words: 262
 characters: 1,332
 readingTime: '00:01:18'
-keywords: agile
-
+tags: [agile]
+---
 Today I was sitting in the office enjoying the view from the window; there were some ducks playing in the pond outside when suddenly the door opened and a guy came walking in. 
 
 He started talking -his voice sounded slightly annoyed- about some problem he had. So he started explaining it to me. Honestly at that time I had no clue what he was talking about, but I just let him continue as it seemed to matter very much to him. Perhaps after hearing more about it the problem will get clearer to me. So the guy continues to talk to me for another 5 minutes. 

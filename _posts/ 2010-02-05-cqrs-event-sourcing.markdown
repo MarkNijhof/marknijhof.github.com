@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS Event Sourcing
-author: Mark Nijhof
-published: true
 words: 607
 characters: 3,478
 readingTime: '00:03:02'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 So after reading this blog post by Rob Conery about [Reporting In NoSQL](http://blog.wekeroad.com/2010/02/05/reporting-in-nosql) where he explains very well what the problem is when using a RDBMS for persisting the state of your domain, or really anything that is written with Object Orientation in mind.
 
 His solution to the problem is to use a object database or a document database for persisting the state of your object structure. And I do agree that this is a valuable approach to solve the problem.

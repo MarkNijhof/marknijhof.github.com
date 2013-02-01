@@ -1,13 +1,13 @@
+---
+layout: post
 title: My Terminal Prompt
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 I want to share something that I learned from [Rolf Bjaanes](http://twitter.com/rolfb) not to long ago and that is that the Terminal command prompt can give me a lot of useful information. Below here is how my Terminal command prompt looks by default:
 
 <center><img src="http://cre8ivethought.s3.amazonaws.com/images/general/TerminalDefault.png" alt="Default Terminal Command Prompt" /></center>
 
-Now my command prompt displays: [machine name]:[current folder] [user]$
+Now my command prompt displays: &#91;machine name]:&#91;current folder] &#91;user]$
 
 <center><img src="http://cre8ivethought.s3.amazonaws.com/images/general/TerminalFancy.png" alt="Fancy Terminal Command Prompt" /></center>
 
@@ -27,17 +27,17 @@ Yeah I said that as well when Rolf send me the string. So I went on and Googled 
 
 This is the variable that the Terminal will use to build the command prompt, we are just going to assign a new value to it.
 
-###\\[$(tput setaf 2)\\]###
+###\\&#91;$(tput setaf 2)\\]###
 
-Ok this is a bit special, the **\\[** and **\\]** indicate to the Terminal that between these brackets there is something that should not be displayed directly. Then we have the **$(** and **)** and this means that what ever in inside of this will be executed. Now finally we get to **tput setef 2** and what this does is tell the Terminal that from now on it should color the output green. The number corresponds with a color. I won't take away the fun you'll have discovering what it what.
+Ok this is a bit special, the **\\&#91;** and **\\]** indicate to the Terminal that between these brackets there is something that should not be displayed directly. Then we have the **$(** and **)** and this means that what ever in inside of this will be executed. Now finally we get to **tput setef 2** and what this does is tell the Terminal that from now on it should color the output green. The number corresponds with a color. I won't take away the fun you'll have discovering what it what.
 
 ###\\u, \\h and \\w###
 
 These are commands to print certain system information, for example **\\u** is the current user, **\\h** is the machine name and **\\w** is the current path. But there are many more commands that you can use.
 
-###\`if [ "a" = "b" ]; then echo "A" ; else echo "B"; fi\`###
+###\`if &#91; "a" = "b" ]; then echo "A" ; else echo "B"; fi\`###
 
-Then we have two if statements inside the configuration string. Please note the weird **\`** single quote surrounding the if statement, without these it won't work! But assuming about everybody reading this blog will know what an if statement is I am not going to go deeper into this, except that you see **[ "$(vcprompt)" != "" ]** more specifically the variable (or for those paying attention this is actually a command) is enclosed with quotes as well, and this is because when they are not there and the variable is empty then the executed command would be **[  != "" ]** which would fail.
+Then we have two if statements inside the configuration string. Please note the weird **\`** single quote surrounding the if statement, without these it won't work! But assuming about everybody reading this blog will know what an if statement is I am not going to go deeper into this, except that you see **&#91; "$(vcprompt)" != "" ]** more specifically the variable (or for those paying attention this is actually a command) is enclosed with quotes as well, and this is because when they are not there and the variable is empty then the executed command would be **&#91;  != "" ]** which would fail.
 
 Now the only reason that I have these two if statements is because I want to prefix the printed information with a white space if it is not empty, I could 'hard code' this but then when it is empty I would end-up with multiple spaces. Yeah call me crazy!
 

@@ -1,9 +1,8 @@
+---
+layout: post
 title: Good-bye Toto, Hello Dorsey
-author: Mark Nijhof
-updated: 06/12/2010
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 This post is about something that I hope you didn't even notice, but I just wrote my own blog engine (again, yes I know...). As you may have seen in [an earlier post](http://cre8ivethought.com/blog/2010/08/04/blog-moved-once-again/), but lately I have been using [Toto](https://github.com/cloudhead/toto) as my blogging engine. 
 
 **And I was really happy with it, until I wanted more control.** 
@@ -60,7 +59,7 @@ Only two methods and two properties exposed, all are pretty self explaining. Now
 
 <script src="https://gist.github.com/730334.js?file=config.rb"></script>
 
-You can add different undefined options as well since it is just a hash. They will be accessible via <dorsey_server_variable>.config[:property_name] and this can be useful if you have some additional meta data that belongs to the blog. Next up is the articles collection:
+You can add different undefined options as well since it is just a hash. They will be accessible via &gt;dorsey_server_variable&lt;.config&#91;:property_name] and this can be useful if you have some additional meta data that belongs to the blog. Next up is the articles collection:
 
 <script src="https://gist.github.com/730334.js?file=articles.rb"></script>
 
@@ -70,7 +69,7 @@ Now finally a bit more logic, lets look at the Article:
 
 <script src="https://gist.github.com/730334.js?file=article.rb"></script>
 
-A few interesting things here, the famous method_missing is used to enable accessing hash values via non-existing properties. F.ex. you can use post.title instead of having to do post[:title] which enhances readability. Also you may notice a file read, I wonder if I can pass in the stream when I parse the article directory. I am also thinking about making the way the URL (path method) gets build can be configurable. So more room for improvement here as well.
+A few interesting things here, the famous method_missing is used to enable accessing hash values via non-existing properties. F.ex. you can use post.title instead of having to do post&#91;:title] which enhances readability. Also you may notice a file read, I wonder if I can pass in the stream when I parse the article directory. I am also thinking about making the way the URL (path method) gets build can be configurable. So more room for improvement here as well.
 
 Now all in all this is not a lot of code for a blog engine now is it? Of-course a lot is taken away by using Sinatra, but this just adds lots of flexibility. You can follow the progress on Dorsey here: [https://github.com/MarkNijhof/Dorsey](https://github.com/MarkNijhof/Dorsey).
 

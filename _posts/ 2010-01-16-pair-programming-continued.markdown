@@ -1,12 +1,12 @@
+---
+layout: post
 title: Pair Programming Continued
-author: Mark Nijhof
-published: true
 words: 935
 characters: 5,029
 readingTime: '00:04:40'
-keywords: agile,coaching,pair programming
+tags: [agile, coaching, pair programming]
 add_trailing_slash_for_disqus: true
-
+---
 In my [previous post](http://cre8ivethought.com/blog/2010/01/15/pair-programming-session/) I talked about how I experience a really good pairing session, and in this post I like to discuss what I believe is needed for this to succeed.
 
 ##Respect##

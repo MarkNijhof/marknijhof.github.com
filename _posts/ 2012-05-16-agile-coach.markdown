@@ -1,12 +1,11 @@
+---
+layout: post
 title: New Job, Agile Coach
-author: Mark Nijhof
-published: true
-slug: agile-coach
 words: 390
 characters: 2,134
 readingTime: '00:01:57'
-keywords: agile,coaching
-
+tags: [agile, coaching]
+---
 On the 1st of June I will start with a new job in the south of Germany to help transform the company into a more Agile way of working, the title I got there is Agile Coach and I am the second one they have employed. The company is Avira the free anti-virus company also one of the top web-companies in the world with 100+ Million customers. 
 
 This new role is a huge change from what I have been doing so far; instead of writing software I will get a facilitating role helping others write (better) software. Initially I will have a strong technical focus as that is where most of my knowledge lies; this is also what is really needed right now. But I will gradually expand my knowledge to be able to help out on management levels as well. 

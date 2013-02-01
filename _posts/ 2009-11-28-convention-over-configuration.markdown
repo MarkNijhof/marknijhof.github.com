@@ -1,12 +1,12 @@
+---
+layout: post
 title: Convention over Configuration
-author: Mark Nijhof
-published: true
 words: 502
 characters: 2,799
 readingTime: '00:02:30'
-keywords: design
+tags: [design]
 add_trailing_slash_for_disqus: true
-
+---
 Just a quick note on Convention over Configuration, I believe this is one of the more useful practices that you can apply in your codebase. So what is this all about then? Well think of about everything you do in life; think for example about “opening a door” or “turning on the water” we all exactly know how to do those things, and because of that it is a fast action. It is something that we don’t have to figure out just before doing it, again and again. These are conventions.
 
 When we start applying these sorts of ideas to our code base this would mean that certain operations need far less thought as they will be the same each and every time. A good example here is mapping the controllers and view together and extracting the URL from the controller name in MVC. If you are a developer that knows these conventions then you know exactly where to look for the code of a certain URL. No need to figure this out each and every time.

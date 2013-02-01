@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS Domain Events
-author: Mark Nijhof
-published: true
 words: 2,598
 characters: 14,830
 readingTime: '00:12:59'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 As you may have seen in my previous post “[CQRS à la Greg Young](http://elegantcode.com/2009/11/11/cqrs-la-greg-young/)” now our domain aggregate root is responsible for publishing domain events indicating that some internal state has changed. In fact state changes within our aggregate root are _only_ allowed through such domain events. Secondly the internal event handlers are _not_ allowed to have any sort of business logic in them, they are _only_ supposed to set or update the internal state of the aggregate root directly from the data the event carries. Using these rules you completely separate the business logic from the state changes. This separation enables us to replay historical domain events without any business logic being triggered bringing it back to the same state as the original aggregate root.
 
 Why is this important? Well now we can use these same domain events for our persistence using an Event Store, this pattern by Martin Fowler is called “[Event Sourcing](http://martinfowler.com/eaaDev/EventSourcing.html)”. Obviously you don’t want to process a credit card or send an e-mail every time you load an aggregate root from the event store. Also from the time the original domain event was recorded and when the aggregate root is loaded from the event store the business logic that decided a state change was needed could have changed, this should not affect the actual historical state change. So this separation is to be taken seriously.
@@ -39,7 +39,7 @@ The RegisterEvent method is defined in the BaseAggregateRoot class, here is a li
 
 <script src="http://gist.github.com/503758.js?file=4.cs"></script>
 
-So if we would write the example out of what is actually happening for the Client Created Event then it would look like this example below, and this is what is being stored in the _registeredEvents.
+So if we would write the example out of what is actually happening for the Client Created Event then it would look like this example below, and this is what is being stored in the &#95;registeredEvents.
 
 <script src="http://gist.github.com/503758.js?file=5.cs"></script>
 
@@ -77,11 +77,11 @@ Before saving the changes in the aggregate root is finalized we also need to upd
 
 In a next post I’ll dig deeper into the event store but for now lets just assume you have a very nice way of storing these domain events and have the ability to retrieve them again.
 
-As the IEventProvider interface nicely dictates there is a LoadFromHistory method that takes an IEnumerable<IDomainEvent> below here is the implementation of this method.
+As the IEventProvider interface nicely dictates there is a LoadFromHistory method that takes an IEnumerable&gt;IDomainEvent&lt; below here is the implementation of this method.
 
 <script src="http://gist.github.com/503764.js?file=11.cs"></script>
 
-When you take a look in the for each loop you will notice that here we are calling apply again, please note that this is the private variant which is responsible for updating the internal state of the aggregate root and that these events are not added to the _appliedEvents collection, nor is the Id or Version updated. We don’t want to save these events again. After applying all the historical domain events we update the aggregate root version to the version of the last event.
+When you take a look in the for each loop you will notice that here we are calling apply again, please note that this is the private variant which is responsible for updating the internal state of the aggregate root and that these events are not added to the &#95;appliedEvents collection, nor is the Id or Version updated. We don’t want to save these events again. After applying all the historical domain events we update the aggregate root version to the version of the last event.
 
 ##The base class##
 

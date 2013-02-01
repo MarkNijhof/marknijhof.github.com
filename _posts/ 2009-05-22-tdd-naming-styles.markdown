@@ -1,8 +1,8 @@
+---
+layout: post
 title: TDD Naming Styles
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 Just recently I have been discussing a different approach to our naming convention for our test projects at work. A commonly accepted way is to append the project names with “Tests” or “Specifications” suffix. Like the following example shows us three different projects: 
 
 <script src="http://gist.github.com/503707.js?file=projects_traditional.cs"></script>

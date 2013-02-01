@@ -1,12 +1,12 @@
+---
+layout: post
 title: Why Why Why Why Why
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
 words: 305
 characters: 1,635
 readingTime: '00:01:31'
-keywords: agile,systems thinking
-
+tags: [agile, systems thinking]
+---
 > One of my kids: "Why are you going outside?"
 
 > Me: "Because I am going to the store"

@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS Trying to make it re-usable
-author: Mark Nijhof
-published: true
 words: 1,387
 characters: 7,975
 readingTime: '00:06:56'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 If you have been following the source code changes on [GitHub](http://github.com/MarkNijhof/Fohjin)  you may have noticed that I renamed the folder Fohjin.DDD to Fohjin.DDD.Example, my intention is to not make anymore changes there. Instead I have created a new folder next to it and in there I am rebuilding the same components but now with re-use and ease-of-use in mind.
 
 The first thing that is very obvious in the example code is that the domain is not very persistence ignorant, something that is valued a lot in Domain-Driven Design. So this is something that I wanted to try to address first. I really like the way NHibernate makes our code persistence ignorant and am attempting to solve this in a similar manner, using [Castle DynamicProxy](http://www.castleproject.org/dynamicproxy/index.html).

@@ -1,9 +1,8 @@
+---
+layout: post
 title: Power Comes In Different Forms
-author: Mark Nijhof
-updated: 12/12/2010 10:21:00
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 I think it is time we get a Noide movement, ahh darn it got my casing all mixed-up; I meant **NoIDE** of-course. I have been developing on the .Net platform since the first beta's where released and have been using Visual Studio.Net since it got first released as well (my first .Net coding was actually done in EditPlus). And the one thing that has been a constant during these last 10 years... 
 
 **Holy crap .Net is 10 years old already...** maybe that needs some more reflecting, later perhaps...

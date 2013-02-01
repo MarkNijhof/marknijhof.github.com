@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }} - Cre8ive Thought</title>
+    <link href='/stylesheets/screen.css' media='screen, projection' rel='stylesheet' type='text/css'>
+    <link href='/stylesheets/print.css' media='print' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 8]>
+      <link href='/stylesheets/ie.css' media='screen, projectio' rel='stylesheet' type='text/css'>
+    <![endif]-->
+    <link href='http://cre8ivethought.s3.amazonaws.com/images/favicon.png' rel='icon' type='image/png'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+  </head>
+  <body class='three-col'>
+    <header>
+      <div id='header'>
+        <nav>
+          <div id='menu'>
+            <ul>
+              <li>
+                <a href='/blog/index'>Home</a>
+              </li>
+              <li>
+                <a href='http://feeds.feedburner.com/Cre8iveThought'>RSS</a>
+              </li>
+              <li>
+                <a href='#About'>About</a>
+              </li>
+              <li>
+                <a href='http://twitter.com/MarkNijhof'>Twitter</a>
+              </li>
+              <li>
+                <a href='/'>Website</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div id='profile-picture'></div>
+      </div>
+    </header>
+    <div id='container'>
+      <div id='left-side'>
+        &nbsp;
+      </div>
+      <div id='main-area'>
+		<div id='content-wrapper'>
+		  <div id='content'>
+
+{% if page.css %}
+  <style type='text/css'>
+    {{page.css}}
+  </style>
+{% endif %}
+
+<div id='content-width'>
+  <article>
+    <div class='post'>
+      <header>
+        <div class='date_post'></div>
+        <br />
+        <h1>{{ page.title }}</h1>
+        <div class='content'>
+          <div id="inqob_job_postings"></div>
+        </div>
+      </header>
+      <div class='content'>
+  	  {{ content }}
+      </div>
+	  <div id='keywords'>
+		  <ul>
+		  	<li>Keywords:</li> 
+		  {% for item in page.tags %}
+		  	<li><b>"{{ item }}"</b></li>
+		  {% endfor %}
+		  </ul>
+	  </div>
+    </div>
+  <div class="row nudge-top">
+    <div class='comments'>
+      {% if page.hide_comments %}
+      <!-- <script type='text/javascript'>
+        (function() {
+        var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://widgets.digg.com/buttons.js';
+        s1.parentNode.insertBefore(s, s1);
+        })();
+      </script> -->
+      <!-- <a class='DiggThisButton DiggCompact' href='http://digg.com/submit?related=no'></a>
+      &nbsp;
+      <a href='http://reddit.com/r/postrock/submit' onclick="window.location = 'http://reddit.com/r/postrock/submit?url=' + encodeURIComponent(window.location); return false">
+        <img alt='submit to reddit' border='0' src='http://reddit.com/static/spreddit7.gif' style='position: relative; top: -1px;'>
+      </a> -->
+      <div id='disqus_thread'>
+        <script type='text/javascript'>
+          var disqus_url = document.location.href + '{% if page.add_trailing_slash_for_disqus %}/{% endif %}';
+          var disqus_skip_auth = true;
+        </script>
+      </div>
+      <script src='http://disqus.com/forums/cre8ivethought/embed.js' type='text/javascript'></script>
+      {% endif %}
+    </div>
+  </article>
+</div>
+
+			</div>
+			<br>
+      <br>
+      <footer>
+        <section>
+          <a name='About'></a>
+          <br>
+          <br>
+          <br>
+          <div id='about'>
+            <h3>
+              About me
+            </h3>
+            <div id='profile-picture-about'></div>
+            <p>
+              Hi, my name is Mark Nijhof and I am using this space to express my own "creative" thoughts about software development and other things that interest me. If you have any questions then please don't hesitate to contact me:
+              <br>
+              <br>
+              E-mail: Mark.Nijhof (@) Cre8iveThought.com
+              <br>
+              Phone: 0049 151 11 34 21 81
+              <br>
+              Twitter:
+              <a href='http://twitter.com/MarkNijhof'>@MarkNijhof</a>
+            </p>
+          </div>
+        </section>
+        <br>
+        <br>
+        <section>
+          <div id='license'>
+            <a href='http://creativecommons.org/licenses/by/3.0/' rel='license'>
+              <img alt='Creative Commons License' src='http://i.creativecommons.org/l/by/3.0/88x31.png' style='border-width: 0pt;'>
+            </a>
+            <br>
+            This work is licensed under a <a href='http://creativecommons.org/licenses/by/3.0/' rel='license'>Creative Commons Attribution 3.0 Unported License</a>.
+          </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+      </footer>
+		</div>
+      </div>
+      <div id='right-side'>
+        &nbsp;
+      </div>
+    </div>
+    <div id='footer'>
+      {% if page.words %}
+      <div id='stats'>
+        <ul>
+          <li>{{ page.words }} Words</li>
+          <li>{{ page.characters }} Characters</li>
+          <li>{{ page.readingTime }} Reading Time</li>
+        </ul>
+      </div>
+      {% endif %}
+    </div>    
+    <script type="text/javascript" charset="utf-8">
+      var __inqob_settings = {
+        email_address:  'vasco.alvesduarte@gmail.com',
+        token:          '',
+        items: [{
+          price: 0,
+          keyword: 'cre8ivethought'
+        }]
+      };
+
+      (function(is) {
+        var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+        var src = (document.location.protocol == 'https:' ? 'https://' : 'http://') + 'inqob.com/get/script';
+        var q = [];
+        q.push('?t='+ new Date().getTime()); 
+        q.push('token=' + is.token); 
+        q.push('email_address=' + is.email_address); 
+        q.push('href=' + encodeURIComponent(window.location.href));
+        sc.src = src + q.join('&');
+        var s = document.getElementsByTagName('script')[0]; 
+        s.parentNode.insertBefore(sc, s);
+      })(__inqob_settings);      
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      //]]>
+    </script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try {
+          var pageTracker = _gat._getTracker("UA-116586-8");
+          pageTracker._setDomainName(".cre8ivethought.com");
+          pageTracker._trackPageview();
+        } catch(err) {}
+      //]]>
+    </script>
+  </body>
+</html>

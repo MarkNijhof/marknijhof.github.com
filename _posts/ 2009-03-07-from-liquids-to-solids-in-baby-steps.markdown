@@ -1,8 +1,8 @@
+---
+layout: post
 title: From liquids to solids in baby steps
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 This post is about refactoring your legacy code towards better designed code, but first let’s define what I think legacy code is. For me legacy code is code that is not properly testable. I intentionally say testable instead of tested, because I believe that some code although testable does not necessarily need to be tested. Having said that, I am an opponent for having plenty of proper tests; they ensure proper design and enable change. One golden rule applies here; when in doubt write tests for it.
 
 I want to go over a few scenarios on how you can steadily improve legacy code to make the code more testable and improve the design. The biggest problem with legacy applications is that you cannot fix it all in one go; you will have to take baby steps in improving the code. And this can be quite daunting, so where do you start?

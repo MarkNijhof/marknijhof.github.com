@@ -1,8 +1,8 @@
+---
+layout: post
 title: Gemsets, Bundler and Versioning
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 One of the things I like about Ruby versus .Net is how easy it is to work with different versions of a specific Gem, for example you wanted to upgrade a specific gem in a project from version 1.2.0 to 1.2.3, then all you needed to do is **gem install the_gem -v=1.2.3**. This command will just install the new version side by side with the previous version. Then in the project you only need to specify that you want to use the new version of the gem. If you don't specify a version then the latest installed version will be used automatically (so you want to make sure you specify a version). For example in Rails you can specify the version by adding the line: **config.gem 'the_gem', :version => '1.2.3'** in the environment.rb file, but there are also other ways.
 
 So far this looks pretty much like how it is done in the .Net world, where we can have multiple different versions of a single DLL side by side in the GAC. But as many .Net developers already know, the GAC ain't a great place to be. And the same applies to the Ruby world, you would for example end up with many different Gems which each have many different versions. A complete nightmare to maintain, what project is using which Gem of what version? To solve this problem I want to introduce you to [Gemsets](http://rvm.beginrescueend.com/gemsets/) and [Bundler](http://gembundler.com/).

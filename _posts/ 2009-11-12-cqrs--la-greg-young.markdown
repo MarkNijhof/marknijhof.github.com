@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS à la Greg Young
-author: Mark Nijhof
-published: true
 words: 3,813
 characters: 21,773
 readingTime: '00:19:03'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 I have had the pleasure of spending a 2 day course and many geek beers with Greg Young talking about Domain-Driven Design specifically focussed on the Command and Query Responsibility Segregation (CQRS) pattern. Greg has taken Domain-Driven Design from how Eric Evans describes it in his book and has adapted mostly the technical implementation of it. Command Query Separation (CQS) was originally thought of by Bertrand Meyer and is applied at object level
 
 > Bertrand defines CQS as: every method should either be a command that performs an action, or a query that returns data to the caller, but not both. In other words, asking a question should not change the answer.

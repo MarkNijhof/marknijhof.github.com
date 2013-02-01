@@ -1,8 +1,8 @@
+---
+layout: post
 title: Slicing the day
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 I have noticed with myself (actually I know this for a very long time now already) that I am much more productive in the evenings then I am at the end of a working day. I also just finished reading [Programming is all Design](http://jockeholm.wordpress.com/2010/01/29/programming-is-all-design/) by Joakim Holman, [Why Design Cannot be Billed by the Hour](http://www.idapostle.com/design/why-design-cant-be-billed-by-the-hour/) by Steve Zelle, [Software on the Cheap](http://blog.objectmentor.com/articles/2010/02/01/software-on-the-cheap) by Uncle Bob Martin and [The Design Dilemma](http://www.threeriversinstitute.org/blog/?p=363) by Kent Beck which made me want to put my thoughts into writing.
 
 Now the main topic in these blog posts is design, writing Software is about design and not about producing code. And that design is an easily overlooked topic within the software industry. Sure for us developers our end product is the functionality that our code delivers, but the way we chose to get there makes a difference like between night and day. In the end choosing the road that leads through design is the more optimal path for creating software (I am aware that there are exceptions). Also note the interesting move from calling TDD Test Driven Development to Test Driven Design and even Design by Example.

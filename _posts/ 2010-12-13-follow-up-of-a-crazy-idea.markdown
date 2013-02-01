@@ -1,8 +1,8 @@
+---
+layout: post
 title: Follow-up Of A Crazy Idea
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 After the many responses I got about [a crazy idea](http://cre8ivethought.com/blog/2010/09/22/a-crazy-idea/) I had a little while ago with some friends I felt I had to give you a small follow-up on that. Unfortunately this crazy idea won't fly (phun intended of-course). 
 
 There are a bit too many problems to solve, the main one being the noise levels inside the plane which sort of defeats the whole purpose of listening to speakers during the flight.

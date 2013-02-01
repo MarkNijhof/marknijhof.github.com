@@ -1,8 +1,8 @@
+---
+layout: post
 title: The Web is all about Composition
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 With new technologies we also get new ways of solving problems, and of-course this very much applies to the web. In the good old days we had static web pages that contained all the information we wanted to display. Web browsers would do one request per page and several parallel or sequential requests for images and style sheets. But time has changed this. 
 
 Now we have browsers that know how to execute JavaScript and are able to make sequential requests triggered by JavaScript from the original request. This can also be triggered by the user; for example by clicking on a link or button. This additional requested content can then be placed anywhere on the page, even after the page has already been displayed to the user. 

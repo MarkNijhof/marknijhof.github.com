@@ -1,12 +1,12 @@
+---
+layout: post
 title: Blog Design Considerations
-author: Mark Nijhof
-published: false
 add_trailing_slash_for_disqus: true
 words: 418
 characters: 2,230
 readingTime: '00:02:05'
-keywords: design,communication
-
+tags: [design, communication]
+---
 I have changed my blog design as you may have seen already, well a better way would be saying that I have changed it again. And I thought that I would just write something about why I made certain things the way they are. 
 
 Now lets get one thing straight; I am not a designer, but I do have opinions about design :)

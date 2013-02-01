@@ -1,8 +1,8 @@
+---
+layout: post
 title: Software Development for Dummies
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 Why do so many people and even actual developers think Software Development is easy, something that everybody can do? Do we really have to look back and see how many projects have failed? Or how many are a maintenance nightmare? Let me tell you by approximation:”Way too many”.
 
 So can we maybe conclude that Software Development is not that easy, in fact let’s conclude that it is hard, very hard actually! Sure everybody can write some code that does something, even businessman can do this, be it in excel but still. Proper Software Development, software that will stand the test of time, or in other words software that is easy to change and extend, that is not so easy. That requires the developers to actually think about their design, anticipate change.

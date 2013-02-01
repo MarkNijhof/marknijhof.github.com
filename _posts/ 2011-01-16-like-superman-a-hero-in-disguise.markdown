@@ -1,8 +1,8 @@
+---
+layout: post
 title: Like Superman, a Hero in Disguise
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 When you run into him on the street you wouldn't know it; he looks be like any other person, perhaps a bit geeky tho. Craftsman is just like Superman, he is a hero in disguise. 
 
 It is amazing how many people claim to have seen him and other who are set out to dis-prove his existence. So lets look a bit closer into this weird phenomena called Craftsman.

@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS Scalability
-author: Mark Nijhof
-published: true
 words: 344
 characters: 1,943
 readingTime: '00:01:43'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 Scalability is one of the several different benefits you gain from applying CQRS and Event Sourcing to your application architecture. And that is what I wanted to take a closer look at in this post.
 
 One of the first obvious ways to increase the performance of your system is to split the Command from the Query side by using a service bus or just a simple queue. So instead of one machine being responsible for both responsibilities you now have 2 machines.

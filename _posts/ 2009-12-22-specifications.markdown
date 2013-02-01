@@ -1,22 +1,22 @@
+---
+layout: post
 title: Specifications
-author: Mark Nijhof
-published: true
 words: 1,930
 characters: 10,972
 readingTime: '00:09:39'
-keywords: cqrs,design,testing
+tags: [cqrs, design, testing]
 add_trailing_slash_for_disqus: true
-
+---
 I received a couple questions about the Specification Framework that I use in the [CQRS example](http://github.com/MarkNijhof/Fohjin/tree/f85a25181b4fa382bd3afbbbbcb08da891cc8e45/Fohjin.DDD.Example)  and thought lets talk about that for a bit. The first thing that should be underlined is that this is _not_ a framework, they are a [few classes and extension methods](http://github.com/MarkNijhof/Fohjin/tree/f85a25181b4fa382bd3afbbbbcb08da891cc8e45/Fohjin.DDD.Example/Test.Fohjin.DDD) that rely on [NUnit](http://www.nunit.org/index.php) for the actual assertions and and [Moq](http://code.google.com/p/moq/) for mocking of the dependencies. I got the initial bits from Greg Young at his DDD course which I extended a little bit for my specific needs.
 
 I have the following base test fixture classes:
 
 1. BaseTestFixture
-2. BaseTestFixture<TSubjectUnderTest>
-3. AggregateRootTestFixture<TAggregateRoot>
-4. CommandTestFixture<TCommand, TCommandHandler, TAggregateRoot>
-5. EventTestFixture<TEvent, TEventHandler>
-6. PresenterTestFixture<TPresenter>
+2. BaseTestFixture&lt;TSubjectUnderTest&gt;
+3. AggregateRootTestFixture&lt;TAggregateRoot&gt;
+4. CommandTestFixture&lt;TCommand, TCommandHandler, TAggregateRoot&gt;
+5. EventTestFixture&lt;TEvent, TEventHandler&gt;
+6. PresenterTestFixture&lt;TPresenter&gt;
 
 These different classes are all very specific towards a specific need, which is a direct opposite from what a framework usually provides.
 
@@ -40,13 +40,13 @@ Below here is an incredible KISS example of how you would use this BaseTestFixtu
 
 <script src="http://gist.github.com/507143.js?file=2.cs"></script>
 
-##The BaseTestFixture<TSubjectUnderTest>##
+##The BaseTestFixture&gt;TSubjectUnderTest&lt;##
 
 Now we are getting into a more interesting case because now my subject under test is actually provided by the generic parameter of the base test fixture class. And to be honest this class is only used with 12 specifications out of the 122 specification classes. This is mostly because it is still a very generic solution, but again a nice way to ease into it.
 
 <script src="http://gist.github.com/507143.js?file=3.cs"></script>
 
-Wow there is _a lot_ more going on here! You are right, because here I make the base test fixture responsible for instantiating the subject under test, including providing mocks for any dependencies that it may have. So it is an auto mocker as well, but the interesting part here is that it puts a reference of the injected mocks in a collection that you can access inside your tests by using the OnDependency<TType> method that returns a Moq object.
+Wow there is _a lot_ more going on here! You are right, because here I make the base test fixture responsible for instantiating the subject under test, including providing mocks for any dependencies that it may have. So it is an auto mocker as well, but the interesting part here is that it puts a reference of the injected mocks in a collection that you can access inside your tests by using the OnDependency&gt;TType&lt; method that returns a Moq object.
 
 Take a look at a specification using this base test fixture class:
 
@@ -56,7 +56,7 @@ So the first thing you see is the method SetupDependencies that is requesting th
 
 Now indeed this is not really treating the subject under test as a black box, for example in the When I make a direct call to a method on the subject under test. So my test knows about this now, meaning when it changes I need to change this test as well. So lets take a look where I go a bit further into the black box mentality.
 
-##The PresenterTestFixture<TPresenter>##
+##The PresenterTestFixture&gt;TPresenter&lt;##
 
 Here I am not going to show you the code of the PresenterTestFixture implementation as it is almost identical the the previous base test fixture. So lets go straight to an actual specification:
 
@@ -84,7 +84,7 @@ Now below here is the command test fixture that allows me to do just that, I nee
 
 <script src="http://gist.github.com/507143.js?file=7.cs"></script>
 
-Please note that the Given method now returns an IEnumerable<IDomainEvent> this is to be used to provide the events that are needed to bring the aggregate root into the correct state for this specification. This is using the exact same mechanism as the actual code uses to make state changes in the aggregate root, so there cannot be a case that you are testing your aggregate root using a state that it cannot get into.
+Please note that the Given method now returns an IEnumerable&gt;IDomainEvent&lt; this is to be used to provide the events that are needed to bring the aggregate root into the correct state for this specification. This is using the exact same mechanism as the actual code uses to make state changes in the aggregate root, so there cannot be a case that you are testing your aggregate root using a state that it cannot get into.
 
 The When method returns the expected command, so all you do there is create the command with the correct information and return it to the specification.
 
@@ -104,4 +104,4 @@ Hey what are all those WillBe and WillBeOfType things that I see in your specifi
 
 I am completely taken by this approach and as you see you don’t need a big BDD framework for this. I think using something like this gives a good learning experience before going towards an actual BDD framework like [MSpec](http://codebetter.com/blogs/aaron.jensen/archive/2008/05/08/introducing-machine-specifications-or-mspec-for-short.aspx). Also Uncle Bob just wrote a good post about to [not abuse the Given When Then approach](http://blog.objectmentor.com/articles/2009/12/19/the-polyglot-tester) and also take a look at the [Mocks aren’t Stubs](http://martinfowler.com/articles/mocksArentStubs.html) article by Martin Fowler.
 
-By now you must <grin> understand that I like to throw with code examples so yes the post is very long, but I hope it provides enough value instead of just confusion.
+By now you must &gt;grin&lt; understand that I like to throw with code examples so yes the post is very long, but I hope it provides enough value instead of just confusion.

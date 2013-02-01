@@ -1,8 +1,8 @@
+---
+layout: post
 title: Smidig 2010
-author: Mark Nijhof
-published: true 
 add_trailing_slash_for_disqus: true
-
+---
 People that follow me on Twitter may have seen my tweets with the #smidig hashtag, so I thought to write a little bit about it so all my non-skandinavian followers also understand what this is all about.
 
 Smidig is the Norwegian word for Agile; and this is also the name of a [community arranged conference in Oslo](http://www.smidig2010.no/), the conference is 2 days and during these days you can enjoy **many lightning talks** in the morning, great food for lunch and **open spaces** in the afternoon. And there was even a 300 person dinner the first day as well.

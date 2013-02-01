@@ -1,10 +1,10 @@
+---
+layout: post
 title: Reflection
-author: Mark Nijhof
-published: false
 words: 953
 characters: 5.128
 readingTime: '00:04:45'
-
+---
 Kent Beck recently published <a href="http://www.threeriversinstitute.org/blog/?p=590">a blog post</a> where he describes his ideal job and I think that that is a great self reflection exercise on someones current situation. So I decided to do the exercise myself as well. And I found that I want to work with smart people on interesting problems in a relaxed environment, where on the large majority of the days I can enjoy the good weather together with my family doing fun stuff. No big surprise there but still good to have done the exercise.
 
 ## What is important to me (professionally)?

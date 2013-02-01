@@ -1,12 +1,12 @@
+---
+layout: post
 title: The Ubiquitous Language is not Ubiquitous
-author: Mark Nijhof
-published: true
 words: 318
 characters: 1,901
 readingTime: '00:01:35'
-keywords: cqrs,design,communication
+tags: [cqrs, design, communication]
 add_trailing_slash_for_disqus: true
-
+---
 I attended an interesting Domain-Driven Design talk today given by [Janniche Haugen](http://twitter.com/miss_haugen/) talking about why you would want to use Domain-Driven Design in a project, and this presentation is what triggered this post.
 
 My statement is that the Ubiquitous Language in Domain-Driven Design is not Ubiquitous.

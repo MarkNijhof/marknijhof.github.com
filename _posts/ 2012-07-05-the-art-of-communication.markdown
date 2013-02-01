@@ -1,11 +1,11 @@
+---
+layout: post
 title: The art of communication
-author: Mark Nijhof
-published: true
 words: 1,708
 characters: 9,498
 readingTime: '00:08:32'
-keywords: agile,communication
-
+tags: [agile, communication]
+---
 Communication is vital for anyone to feel included, functional and from my perspective alive. It is one of the very first skills you learn as a human being. As a little child you quickly learn how to communicate certain needs or wants. I am still amazed how our youngest boy was able to let us know exactly what he wanted without having to say a single word. It also depends on the child, he was certainly better at it then his brother and sister, or perhaps we became better at it as parents. Anyway after the basic instinct of crying/screaming children learn to communicate before much else.
 
 And for a skill learned so early in life it stays one of the hardest things to master, perhaps it is something we forget as we grow up when it seems to become less important. 

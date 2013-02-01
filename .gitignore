@@ -10,4 +10,4 @@ vendor/gems/*
 node_modules
 npm-debug.log
 .monitor
-_site/*
+blog/*

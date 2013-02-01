@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS à la Greg Young example code
-author: Mark Nijhof
-published: true
 words: 182
 characters: 1,024
 readingTime: '00:00:54'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 I have had the pleasure of spending a 2 day course and many geek beers with Greg Young talking about Domain-Driven Design specifically focussed on Command Query Responsibility Segregation (CQRS).
 
 And because this interests me very much I thought about writing an example, now this example is already well on its way. I am also preparing an actual blog post describing the example in great detail, but I am running a bit out of time so I decided to publish the code even without the supporting blog post. So the DDD Yahoo list has already seen the URL which is: <http://github.com/MarkNijhof/Fohjin>

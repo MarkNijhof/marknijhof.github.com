@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS Domain State
-author: Mark Nijhof
-published: true
 words: 360
 characters: 2,089
 readingTime: '00:01:48'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 This morning [Aaron Jensen](http://codebetter.com/blogs/aaron.jensen/default.aspx) asked a really interesting [question](http://twitter.com/aaronjensen/status/6454974718) on Twitter “Should Aggregate Roots en Entities always keep their state if it is not needed for business decisions? Is firing events and relying on the reporting store enough?”. He really made me think, Aaron thanks for that!
 
 So for example you have some behavior on your domain that gets called when a customer moves, this behavior will publish a Customer Moved event containing the new address. If the domain does not use the address information for any decision making, does it then need to be persisted in the aggregate root?

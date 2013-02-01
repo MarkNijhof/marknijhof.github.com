@@ -1,7 +1,7 @@
+---
+layout: post
 title: Actually, People Love Predictable Change
-author: Mark Nijhof
-published: true
-
+---
 I just read an interesting post by Tim Kastelle claiming that [Actually, People Love Change](http://timkastelle.org/blog/2012/11/actually-people-love-change/). In his post he has some interesting points but I am thinking that he may be oversimplifying the experiment a little bit.
 
 I think that predictable change is something that people love, f.ex. the questions Tim asked were not really radical in itself.

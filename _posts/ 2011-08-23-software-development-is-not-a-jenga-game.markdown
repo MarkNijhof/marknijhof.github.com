@@ -1,11 +1,11 @@
+---
+layout: post
 title: Software Development is not a Jenga game
-author: Mark Nijhof
-published: true
 words: 3.127
 characters: 18.712
 readingTime: '00:15:38'
-keywords: agile,design
-
+tags: [agile, design]
+---
 This is an extract from the talk "Software Development is not a Jenga game" <i>Republished from 16 May 2009 because I had some requests for it</i>.
 <center>
 <a href="http://cre8ivethought.com/images/PP/big/Slide2.JPG"><img src="http://cre8ivethought.com/images/PP/Slide2.png" alt="FubuMVC" style="position:relative; margin: 2px 10px 10px 10px;"></a>

@@ -1,8 +1,8 @@
+---
+layout: post
 title: What I mean when I say, This is Bad code
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 Well of course I mean that the code _is_ bad. But this has _nothing_ to do with the person who wrote the code. This small but so important detail is not understood by the majority of software developers. Actually it is something people in general find it hard to understand; the first reaction is often a defensive one.
 
 But that way nobody learns, a golden opportunity for the author of the bad code to learn a better way and improve his skills, forever gone, out the window. Hey and also for me, I am often wrong, so explain it to me.

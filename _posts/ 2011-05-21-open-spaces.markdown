@@ -1,12 +1,11 @@
+---
+layout: post
 title: Open Spaces
-author: Mark Nijhof
-published: true
 words: 1,344
 characters: 7,596
 readingTime: '00:06:43'
-keywords: agile,communication,meetings
-
-
+tags: [agile, communication, meetings]
+---
 I am helping organizing [ROOTS](http://rootsconf.no/) this year and part of this years conference is that we will have two sessions with Open Spaces right after a few sessions with lightning talks. And I will be facilitating that; doing my best to make it a highly interesting experience. 
 
 Open Spaces are an approach of having a meeting or a conference where there is no predetermined agenda established. Instead the attendees themselves will decide what they want to be discussing and as such it is a self organizing event.

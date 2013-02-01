@@ -1,12 +1,12 @@
+---
+layout: post
 title: CQRS Event Versioning
-author: Mark Nijhof
-published: true
 words: 507
 characters: 2,822
 readingTime: '00:02:32'
-keywords: cqrs,design
+tags: [cqrs, design]
 add_trailing_slash_for_disqus: true
-
+---
 When using Event Sourcing you store your events in an Event Store. This Event Store can only insert new events and read historical events, nothing more nothing less. So when you change your domain logic and also the events belonging to this behavior, then you cannot go back into the Event Store and do a one time convert of all the historical events belonging to the same behavior. The Event Store needs to stay intact, that is one of its powers.
 
 So you make a new version of the original event, this new version carries more or less information then the original one. Lets take a look at a very simple example:

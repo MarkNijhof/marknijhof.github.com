@@ -1,11 +1,11 @@
+---
+layout: post
 title: Client Express - Require and Exports
-author: Mark Nijhof
-published: true
 words: 623
 characters: 3.793
 readingTime: '00:03:06'
-keywords: technology,javascript
-
+tags: [technology, javascript]
+---
 I recently [introduced](http://cre8ivethought.com/blog/2011/06/25/client-express) you to [Client Express](http://clientexpressjs.com/) where I explained that the goal is to copy the API of [Express](http://expressjs.com/) ([Node.js](http://nodejs.org/)) but for use on the client. This will enable you to share code between the server and the client, specifically the routing.
 
 And I got a pretty decent part done when I blogged about it, but that was one major difference and that was that on the server you use **require** to include different JavaScript libraries and within these libraries you would use **exports** to export your functionality to the application.

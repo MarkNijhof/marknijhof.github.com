@@ -1,8 +1,8 @@
+---
+layout: post
 title: A Crazy Idea
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 Some time ago after the NNUG yearly meeting I was talking to [Sondre Bjellås](http://twitter.com/SondreB) and [Lisbeth Skogland](http://twitter.com/LizSkogland) and one thing led to another and suddenly we were talking about arranging a conference. 
 
 But not any conference may I add:

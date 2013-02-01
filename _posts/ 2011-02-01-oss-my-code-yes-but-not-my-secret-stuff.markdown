@@ -1,8 +1,8 @@
+---
+layout: post
 title: OSS; my Code, Yes but Not My Secret Stuff
-author: Mark Nijhof
-published: true
 add_trailing_slash_for_disqus: true
-
+---
 Using Ruby, GitHub and Heroku is absolutely a great combination to work with, the easy way to 'push' something into staging or production is just wonderful. GitHub is also a great place to share code and get feedback on it. For this reason I rather OSS something then keep it in a private repository at GitHub. 
 
 But I don't want the whole world to be able to see my database credentials or the different API keys that I am using for my projects.
@@ -13,7 +13,7 @@ And for this I found a dead simple solution which I'll share with you here, and 
 
 Lets just take a look at a Rails project; there are many different ways to define your credentials and other configurable information. We can for example use YAML::load to load configuration from a .yml file, many gems are familiar with this way of working some even search for a .yml file themselves. 
 
-An other way is to assign [Environment Variables](http://ruby.about.com/od/rubyfeatures/a/envvar.htm) in the different environment configuration files from Rails, like assigning ENV['mongodb_password'] in /config/environments/production.rb. These environment variables are then used in the different places in the code, like my MongoDB initializer does:
+An other way is to assign [Environment Variables](http://ruby.about.com/od/rubyfeatures/a/envvar.htm) in the different environment configuration files from Rails, like assigning ENV&#91;&quot;mongodb_password&quot;] in /config/environments/production.rb. These environment variables are then used in the different places in the code, like my MongoDB initializer does:
 
 <script src="https://gist.github.com/806090.js?file=mongodb_initializer.rb"></script>
 
@@ -29,7 +29,7 @@ But when using Heroku you get yourself a problem, because Heroku receives a push
 
 ##The Solution, or well a Solution##
 
-First step is to make sure all this secret data is placed in Environment Variables like; ENV['mongodb_password']. Take for example again a look at my MongoDB Rails initializer:
+First step is to make sure all this secret data is placed in Environment Variables like; ENV&#91;&quot;mongodb_password&quot;]. Take for example again a look at my MongoDB Rails initializer:
 
 <script src="https://gist.github.com/806090.js?file=mongodb_initializer.rb"></script>
 
